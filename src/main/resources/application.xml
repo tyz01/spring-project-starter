@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
     <context:property-placeholder location="application.properties"/>
-    <context:annotation-config/>
-    <context:component-scan base-package="org.example"/>
+    <context:component-scan base-package="org.example"
+                            annotation-config="true"
+                            resource-pattern="**/*.class"
+                            scoped-proxy="no"
+                            scope-resolver=""
+                            use-default-filters="false"
+    >
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+        <context:include-filter type="assignable" expression="org.example.database.repository.CrudRepository"/>
+        <context:include-filter type="regex" expression="org\..+Repository"/>
+    </context:component-scan>
 
-    <bean class="org.example.bfpp.InjectBeanPostProcessor"/>
+    <bean class="org.example.bpp.InjectBeanPostProcessor"/>
 
     <!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
 
@@ -23,32 +32,22 @@
         <constructor-arg type="java.lang.String" value="${db.driver}"/>
     </bean>
 
-    <bean class="org.example.bfpp.LogBeanFactoryPostProcessor"/>
-    <bean class="org.example.bfpp.VerifyPropertyBeanFactoryPostProcessor"/>
-    <bean class="org.example.bfpp.TransactionBeanPostProcessor"/>
-    <bean class="org.example.bfpp.AuditingBeanPostProcessor"/>
-
-
-    <bean id="pool" name="pool" class="org.example.database.pool.ConnectionPool">
-        <constructor-arg index="0" name="userName" type="java.lang.String" value="${db.username}"/>
-        <constructor-arg index="1" name="poolSize" type="java.lang.Integer" value="10"/>
-        <constructor-arg index="2" type="java.util.List">
-            <list>
-                <value>--arg1=value1</value>
-                <value>--arg2=value2</value>
-                <ref bean="driver"></ref>
-            </list>
-        </constructor-arg>
-        <constructor-arg index="3" type="java.util.Map">
-            <map>
-                <entry key="url" value="posgresurl"/>
-                <entry key="password" value="1234"/>
-                <entry key="driver" value-ref="driver"/>
-                <entry key="test" value="#{driver.length() > 10 }"/>
-                <entry key="host" value="#{'${db.hosts}'.split(',')}"/>
-            </map>
-        </constructor-arg>
-    </bean>
-
-    <bean id="companyRepository" class="org.example.database.repository.CompanyRepository" />
+    <bean id="companyRepository" class="org.example.database.repository.CompanyRepository"/>
 </beans>
+
+        <!--<constructor-arg index="2" type="java.util.List">-->
+        <!--<list>-->
+        <!--    <value>&#45;&#45;arg1=value1</value>-->
+        <!--    <value>&#45;&#45;arg2=value2</value>-->
+        <!--    <ref bean="driver"></ref>-->
+        <!--</list>-->
+        <!--</constructor-arg>-->
+        <!--<property name="proprties">-->
+        <!--<map>-->
+        <!--    <entry key="url" value="posgresurl"/>-->
+        <!--    <entry key="password" value="1234"/>-->
+        <!--    <entry key="driver" value-ref="driver"/>-->
+        <!--    <entry key="test" value="#{driver.length() > 10 }"/>-->
+        <!--    <entry key="host" value="#{'${db.hosts}'.split(',')}"/>-->
+        <!--</map>-->
+        <!--</property>-->

@@ -1,22 +1,22 @@
 package org.example.database.pool;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.util.List;
 import java.util.Map;
 
+@Component("pool")
 public class ConnectionPool {
     private final String userName;
     private final Integer poolSize;
 
-    private final List<Object> args;
-    private final Map<String, Object> properties;
-
-    public ConnectionPool(String userName, Integer poolSize, List<Object> args, Map<String, Object> properties) {
+    public ConnectionPool(@Value("${db.username}") String userName, @Value("${db.poolSize}") Integer poolSize) {
         this.userName = userName;
         this.poolSize = poolSize;
-        this.args = args;
-        this.properties = properties;
     }
 
     @PostConstruct

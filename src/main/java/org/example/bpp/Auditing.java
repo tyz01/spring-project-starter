@@ -1,4 +1,4 @@
-package org.example.bfpp;
+package org.example.bpp;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,6 +6,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
-public @interface InjectBean {
+@Target(ElementType.TYPE)
+public @interface Auditing {
 }
