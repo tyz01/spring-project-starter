@@ -1,4 +1,4 @@
-package org.example.ioc;
+package org.example.spring.ioc;
 
 public class Container {
 

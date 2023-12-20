@@ -1,11 +1,9 @@
-package org.example.database.repository;
+package org.example.spring.database.repository;
 
-import org.example.bpp.Auditing;
-import org.example.bpp.Transaction;
-import org.example.database.pool.ConnectionPool;
-import org.example.entity.Company;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.example.spring.bpp.Auditing;
+import org.example.spring.bpp.Transaction;
+import org.example.spring.database.pool.ConnectionPool;
+import org.example.spring.entity.Company;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;

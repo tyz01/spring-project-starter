@@ -1,4 +1,4 @@
-package org.example.entity;
+package org.example.spring.entity;
 
 public record Company(Integer id) {
 }

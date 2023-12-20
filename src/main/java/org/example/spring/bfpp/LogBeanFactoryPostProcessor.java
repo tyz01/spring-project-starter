@@ -1,4 +1,4 @@
-package org.example.bfpp;
+package org.example.spring.bfpp;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;

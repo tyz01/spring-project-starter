@@ -1,9 +1,8 @@
-package org.example.service;
+package org.example.spring.service;
 
-import org.example.database.repository.CompanyRepository;
-import org.example.database.repository.CrudRepository;
-import org.example.database.repository.UserRepository;
-import org.example.entity.Company;
+import org.example.spring.database.repository.CrudRepository;
+import org.example.spring.database.repository.UserRepository;
+import org.example.spring.entity.Company;
 import org.springframework.stereotype.Service;
 
 @Service
