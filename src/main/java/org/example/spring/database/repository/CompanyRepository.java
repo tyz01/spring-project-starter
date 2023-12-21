@@ -1,6 +1,7 @@
 package org.example.spring.database.repository;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.example.spring.bpp.Auditing;
 import org.example.spring.bpp.Transaction;
 import org.example.spring.database.pool.ConnectionPool;
@@ -14,6 +15,8 @@ import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.Optional;
 
+
+@Slf4j
 @Transaction
 @Auditing
 @Repository
@@ -27,17 +30,17 @@ public class CompanyRepository implements CrudRepository<Integer, Company> {
 
     @PostConstruct
     private void init() {
-        System.out.println("init company repository");
+        log.warn("init company repository");
     }
 
     @Override
     public Optional<Company> findById(Integer id) {
-        System.out.println("find by id");
+        log.info("find by id");
         return Optional.of(new Company(id));
     }
 
     @Override
     public void delete(Company entity) {
-        System.out.println("delete method");
+       log.info("delete method");
     }
 }

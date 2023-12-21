@@ -1,5 +1,6 @@
 package org.example.spring.configuration;
 
+import lombok.extern.slf4j.Slf4j;
 import org.example.spring.configuration.condition.JpaCondition;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -10,6 +11,7 @@ import javax.annotation.PostConstruct;
 
 @Conditional(JpaCondition.class)
 @Configuration
+@Slf4j
 public class JpaConfiguration {
 
 //    @Bean
@@ -19,6 +21,6 @@ public class JpaConfiguration {
 //    }
     @PostConstruct
     void init() {
-        System.out.println("jpa configuration is enable");
+        log.info("jpa configuration is enable");
     }
 }
