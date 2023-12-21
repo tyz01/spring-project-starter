@@ -22,7 +22,7 @@ import java.util.Optional;
 public class CompanyRepository implements CrudRepository<Integer, Company> {
     private final ConnectionPool pool;
     private final List<ConnectionPool> connectionPools;
-    @Value("${db.poolSize}")
+    @Value("${db.pool.size}")
     private final Integer poolSize;
 
     @PostConstruct

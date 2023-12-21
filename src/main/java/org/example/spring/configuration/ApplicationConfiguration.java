@@ -1,7 +1,6 @@
 package org.example.spring.configuration;
 
 import org.example.spring.database.pool.ConnectionPool;
-import org.example.spring.database.repository.CrudRepository;
 import org.example.spring.database.repository.UserRepository;
 import org.example.web.WebConfiguration;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -15,7 +14,7 @@ public class ApplicationConfiguration {
 
     @Bean("pool2")
     @Scope(BeanDefinition.SCOPE_SINGLETON)
-    public ConnectionPool pool2(@Value("${db.username}") String username, @Value("${db.poolSize}") Integer poolSize) {
+    public ConnectionPool pool2(@Value("${db.username}") String username, @Value("${db.pool.size}") Integer poolSize) {
         return new ConnectionPool(username, poolSize);
     }
     @Bean

@@ -14,7 +14,7 @@ public class ConnectionPool {
 
     @Value("${db.username}")
     private final String userName;
-    @Value("${db.poolSize}")
+    @Value("${db.pool.size}")
     private final Integer poolSize;
 
     @PostConstruct
