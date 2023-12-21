@@ -10,7 +10,7 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.*;
 
 @Import(WebConfiguration.class)
-@Configuration(proxyBeanMethods = false)
+@Configuration(proxyBeanMethods = true)
 @PropertySource("classpath:application.properties")
 @ComponentScan(basePackages = "org.example",
         useDefaultFilters = false,
@@ -26,8 +26,8 @@ public class ApplicationConfiguration {
 
     @Bean("pool2")
     @Scope(BeanDefinition.SCOPE_SINGLETON)
-    public ConnectionPool pool2(@Value("${db.username}") String username, @Value("${db.poolsize}") Integer poolsize) {
-        return new ConnectionPool(username, poolsize);
+    public ConnectionPool pool2(@Value("${db.username}") String username, @Value("${db.poolSize}") Integer poolSize) {
+        return new ConnectionPool(username, poolSize);
     }
     @Bean
     public ConnectionPool pool3() {
