@@ -1,0 +1,32 @@
+2023-12-21 22:33:04.763  INFO 6608 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:33:04.796  INFO 6608 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:33:04.801  INFO 6608 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:33:04.810  WARN 6608 --- [main] o.e.s.d.repository.CompanyRepository     : init company repository
+2023-12-21 22:33:04.822  WARN 6608 --- [main] o.e.s.d.repository.CompanyRepository     : init company repository
+2023-12-21 22:33:04.961  INFO 6608 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:33:04.962  INFO 6608 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:33:04.963  INFO 6608 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:52:57.266  INFO 8628 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:52:57.330  INFO 8628 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:52:57.332  INFO 8628 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:52:57.340  WARN 8628 --- [main] o.e.s.d.repository.CompanyRepository     : init company repository
+2023-12-21 22:52:57.348  WARN 8628 --- [main] o.e.s.d.repository.CompanyRepository     : init company repository
+2023-12-21 22:52:57.573  INFO 8628 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:52:57.573  INFO 8628 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:52:57.574  INFO 8628 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:54:17.107  INFO 7192 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:54:17.133  INFO 7192 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:54:17.135  INFO 7192 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:54:17.142  WARN 7192 --- [main] o.e.s.d.repository.CompanyRepository     : init company repository
+2023-12-21 22:54:17.151  WARN 7192 --- [main] o.e.s.d.repository.CompanyRepository     : init company repository
+2023-12-21 22:54:17.277  INFO 7192 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:54:17.278  INFO 7192 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:54:17.279  INFO 7192 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:55:43.665  INFO 5548 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:55:43.698  INFO 5548 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:55:43.701  INFO 5548 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-21 22:55:43.709  WARN 5548 --- [main] o.e.s.d.repository.CompanyRepository     : init company repository
+2023-12-21 22:55:43.721  WARN 5548 --- [main] o.e.s.d.repository.CompanyRepository     : init company repository
+2023-12-21 22:55:43.948  INFO 5548 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:55:43.949  INFO 5548 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-21 22:55:43.949  INFO 5548 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
