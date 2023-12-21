@@ -13,3 +13,4 @@ public class EntityEvent extends ApplicationEvent {
         this.accessType = accessType;
     }
 
+}
