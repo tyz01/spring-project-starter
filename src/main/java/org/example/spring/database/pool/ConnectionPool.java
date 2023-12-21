@@ -1,5 +1,6 @@
 package org.example.spring.database.pool;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -8,14 +9,13 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 @Component("pool")
+@RequiredArgsConstructor
 public class ConnectionPool {
-    private final String userName;
-    private final Integer poolSize;
 
-    public ConnectionPool(@Value("${db.username}") String userName, @Value("${db.poolSize}") Integer poolSize) {
-        this.userName = userName;
-        this.poolSize = poolSize;
-    }
+    @Value("${db.username}")
+    private final String userName;
+    @Value("${db.poolSize}")
+    private final Integer poolSize;
 
     @PostConstruct
     private void init() {

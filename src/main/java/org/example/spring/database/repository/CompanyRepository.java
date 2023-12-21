@@ -1,5 +1,6 @@
 package org.example.spring.database.repository;
 
+import lombok.RequiredArgsConstructor;
 import org.example.spring.bpp.Auditing;
 import org.example.spring.bpp.Transaction;
 import org.example.spring.database.pool.ConnectionPool;
@@ -16,19 +17,13 @@ import java.util.Optional;
 @Transaction
 @Auditing
 @Repository
+@RequiredArgsConstructor
 @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class CompanyRepository implements CrudRepository<Integer, Company> {
     private final ConnectionPool pool;
     private final List<ConnectionPool> connectionPools;
+    @Value("${db.poolSize}")
     private final Integer poolSize;
-
-    public CompanyRepository(ConnectionPool pool,
-                             List<ConnectionPool> connectionPools,
-                             @Value("${db.poolSize}") Integer poolSize) {
-        this.pool = pool;
-        this.connectionPools = connectionPools;
-        this.poolSize = poolSize;
-    }
 
     @PostConstruct
     private void init() {
