@@ -15,17 +15,17 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class CompanyService {
 
-    private final CrudRepository<Integer, Company> companyRepository;
+    private final CrudRepository<Long, Company> companyRepository;
     private final ApplicationEventPublisher eventPublisher;
     private final UserService userService;
 
 
-    public Optional<CompanyReadDto> findById(Integer id) {
+    public Optional<CompanyReadDto> findById(Long id) {
         return companyRepository.findById(id).
                 map(entity -> {
                     // TODO 07.12.2023
                     eventPublisher.publishEvent(new EntityEvent(entity, AccessType.READ));
-                    return new CompanyReadDto(entity.id());
+                    return new CompanyReadDto(entity.getId());
                 });
     }
 }

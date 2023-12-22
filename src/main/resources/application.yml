@@ -18,13 +18,24 @@ db:
       timeout: 2
     - size: 3
       timeout: 3
-spring:
-   profiles.active:qa
 
+spring.profiles.active: qa
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+   properties.hibernate:
+     show_sql: true
+     format_sql: true
+     hbm2ddl.auto: validate
 logging:
   file:
     name: tyz.log
     path: /
   level:
-   root: WARN
+   root: INFO
    org.example.spring.database.pool.ConnectionPool: INFO
