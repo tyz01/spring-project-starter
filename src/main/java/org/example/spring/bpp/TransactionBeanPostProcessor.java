@@ -3,6 +3,7 @@ package org.example.spring.bpp;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.lang.reflect.Proxy;
 import java.util.HashMap;
@@ -30,6 +31,9 @@ public class TransactionBeanPostProcessor implements BeanPostProcessor {
                         System.out.println("open transaction");
                         try {
                             return method.invoke(bean, args);
+                        } catch (Exception exception) {
+                            System.out.println("rollback transaction");
+                            throw exception;
                         } finally {
                             System.out.println("close transaction");
                         }

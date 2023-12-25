@@ -22,6 +22,7 @@ dependencies {
 include: jakarta-persistence, jakarta-transaction
 hibernate, aop, jdbc, HikariCP - connection pool, witch use data jpa default
  */
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.postgresql:postgresql'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'

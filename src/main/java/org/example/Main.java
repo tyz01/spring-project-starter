@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
-//@EntityScan
+@EntityScan(basePackages = "org.example.spring.entity")
 @SpringBootApplication
 @ConfigurationPropertiesScan
 public class Main {

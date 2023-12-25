@@ -8,6 +8,7 @@ import org.example.spring.listener.entity.AccessType;
 import org.example.spring.listener.entity.EntityEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -19,7 +20,7 @@ public class CompanyService {
     private final ApplicationEventPublisher eventPublisher;
     private final UserService userService;
 
-
+    @Transactional
     public Optional<CompanyReadDto> findById(Long id) {
         return companyRepository.findById(id).
                 map(entity -> {
