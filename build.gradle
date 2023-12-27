@@ -33,6 +33,7 @@ hibernate, aop, jdbc, HikariCP - connection pool, witch use data jpa default
     implementation 'org.springframework.data:spring-data-envers' // auditing and listeners
     implementation 'com.querydsl:querydsl-jpa'
     implementation 'com.querydsl:querydsl-apt' // annotation processor , generate querydsl entity
+    implementation 'org.liquibase:liquibase-core'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     /*

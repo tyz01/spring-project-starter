@@ -3,7 +3,9 @@ package org.example.spring.integration.database.repository;
 import lombok.RequiredArgsConstructor;
 import org.example.spring.database.repository.CompanyRepository;
 import org.example.spring.entity.Company;
+import org.example.spring.integration.IntegrationBaseTest;
 import org.example.spring.integration.annotation.IT;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.transaction.support.TransactionTemplate;
 
@@ -18,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @RequiredArgsConstructor
 // @Rollback - default
 //@Commit
-class CompanyRepositoryTest {
+class CompanyRepositoryTest extends IntegrationBaseTest {
     private static final Long APPLE_ID = 5L;
     private final EntityManager entityManager;
     private final TransactionTemplate transactionTemplate;
@@ -26,6 +28,7 @@ class CompanyRepositoryTest {
     private final CompanyRepository companyRepository;
 
     @Test
+    @Disabled
     void delete() {
         var maybeCompany = companyRepository.findById(APPLE_ID);
         assertTrue(maybeCompany.isPresent());

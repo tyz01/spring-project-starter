@@ -6,6 +6,7 @@ import org.example.spring.database.repository.UserRepository;
 import org.example.spring.dto.UserFilter;
 import org.example.spring.entity.Role;
 import org.example.spring.entity.User;
+import org.example.spring.integration.IntegrationBaseTest;
 import org.example.spring.integration.annotation.IT;
 import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;
@@ -17,12 +18,8 @@ import java.time.LocalDate;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-@IT
-@Sql({
-        "classpath:sql/data.sql"
-})
 @RequiredArgsConstructor
-class UserRepositoryTest {
+class UserRepositoryTest extends IntegrationBaseTest {
     private final UserRepository userRepository;
 
     @Test
