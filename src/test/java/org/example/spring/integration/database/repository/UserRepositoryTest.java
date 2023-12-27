@@ -24,7 +24,21 @@ class UserRepositoryTest {
     private final UserRepository userRepository;
 
     @Test
-    //@Commit
+    void checkBatch() {
+        var users = userRepository.findAll();
+        userRepository.updateCompanyAndRole(users);
+        System.out.println();
+    }
+
+    @Test
+    void checkJdbcTemplate() {
+        var users = userRepository.findAllByCompanyIdAndRole(1L, Role.USER);
+        assertThat(users).hasSize(1);
+        System.out.println();
+    }
+
+    @Test
+        //@Commit
     void checkAuditing() {
         var ivan = userRepository.findById(1L).get();
         ivan.setBirthDate(ivan.getBirthDate().plusYears(1L));
