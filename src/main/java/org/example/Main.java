@@ -11,7 +11,8 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 @ConfigurationPropertiesScan
 public class Main {
     public static void main(String[] args) {
-       var context = SpringApplication.run(Main.class, args);
-        System.out.println(context.getBeanDefinitionCount());
+      // var context =
+               SpringApplication.run(Main.class, args);
+      //  System.out.println(context.getBeanDefinitionCount());
     }
 }

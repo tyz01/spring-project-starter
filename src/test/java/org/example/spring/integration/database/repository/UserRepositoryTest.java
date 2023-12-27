@@ -3,7 +3,6 @@ package org.example.spring.integration.database.repository;
 import lombok.RequiredArgsConstructor;
 
 import org.example.spring.database.repository.UserRepository;
-import org.example.spring.dto.PersonalInfo;
 import org.example.spring.dto.UserFilter;
 import org.example.spring.entity.Role;
 import org.example.spring.entity.User;
@@ -11,7 +10,7 @@ import org.example.spring.integration.annotation.IT;
 import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
-import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.jdbc.Sql;
 
 import java.time.LocalDate;
 
@@ -19,6 +18,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @IT
+@Sql({
+        "classpath:sql/data.sql"
+})
 @RequiredArgsConstructor
 class UserRepositoryTest {
     private final UserRepository userRepository;

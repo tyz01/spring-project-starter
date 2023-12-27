@@ -21,6 +21,8 @@ public class Chat implements BaseEntity<Long> {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "name")
+    private String name;
     @Builder.Default
     @OneToMany(mappedBy = "chat")
     private List<UserChat> userChats = new ArrayList<>();
