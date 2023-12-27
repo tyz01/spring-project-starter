@@ -1,4 +1,4 @@
-package service;
+package org.example.spring.integration.service;
 
 import lombok.RequiredArgsConstructor;
 import org.example.Main;
@@ -9,7 +9,9 @@ import org.example.spring.service.CompanyService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.TestConstructor;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,6 +19,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @IT
 @RequiredArgsConstructor
+//@ActiveProfiles("test")
+//@TestConstructor(autowireMode = TestConstructor.AutowireMode.ALL)
 //@ExtendWith(SpringExtension.class)
 //@ContextConfiguration(classes = Main.class, inheritInitializers = false)
 public class CompanyServiceIT {
