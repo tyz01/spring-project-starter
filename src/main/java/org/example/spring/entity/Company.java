@@ -9,6 +9,11 @@ import javax.persistence.*;
 import java.util.HashMap;
 import java.util.Map;
 
+@NamedQuery( //NamedQuery
+        name = "Company.findByName",
+        query = "select c from Company c where lower(c.name) = lower(name)" // or c.name = ?1, lower(name) must be same our property name in the CompanyRepository
+
+) // priority than PartTreeJpaQuery
 @Data
 @Builder
 @NoArgsConstructor

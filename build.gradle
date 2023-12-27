@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.6.2'
     id("io.spring.dependency-management") version "1.1.4"
     id 'io.freefair.lombok' version '6.3.0'
+    id("com.ewerk.gradle.plugins.querydsl") version "1.0.10"
     id 'java'
 }
 
@@ -10,6 +11,10 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+}
+
+configurations {
+    querydsl.extendsFrom annotationProcessor, implementation, compilyOnly, runtimeOnly
 }
 
 dependencies {
@@ -22,14 +27,31 @@ dependencies {
 include: jakarta-persistence, jakarta-transaction
 hibernate, aop, jdbc, HikariCP - connection pool, witch use data jpa default
  */
+    implementation 'org.postgresql:postgresql'
+    implementation 'org.springframework.data:spring-data-envers' // auditing and listeners
+    implementation 'com.querydsl:querydsl-jpa'
+    implementation 'com.querydsl:querydsl-apt' // annotation processor , generate querydsl entity
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     /*
 include junit, jupiter
 */
-    implementation 'org.postgresql:postgresql'
+}
 
+querydsl {
+    jpa = true
+    library = 'com.querydsl:querydsl-apt:5.0.0'
+    querydslSourcesDir = "$buildDir/generated/sources/annotationProcessor/java/main"
+}
+
+compileQuerydsl {
+    options.annotationProcessorPath = configurations.querydsl
 }
 
 test {
     useJUnitPlatform()
+}
+
+wrapper {
+    gradleVersion = '7.3'
 }

@@ -1,9 +1,8 @@
 package org.example.spring.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.spring.database.repository.CrudRepository;
+import org.example.spring.database.repository.CompanyRepository;
 import org.example.spring.database.repository.UserRepository;
-import org.example.spring.entity.Company;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -11,6 +10,6 @@ import org.springframework.stereotype.Service;
 public class UserService {
     private final UserRepository userRepository;
 
-    private final CrudRepository<Long, Company> companyRepository ;
+    private final CompanyRepository companyRepository ;
 
 }

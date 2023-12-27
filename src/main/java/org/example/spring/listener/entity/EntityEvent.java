@@ -3,7 +3,6 @@ package org.example.spring.listener.entity;
 import lombok.Getter;
 import org.springframework.context.ApplicationEvent;
 
-
 public class EntityEvent extends ApplicationEvent {
     @Getter
     private final AccessType accessType;

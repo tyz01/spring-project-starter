@@ -31,7 +31,6 @@ public class UserChat implements BaseEntity<Long> {
         this.user = user;
         this.user.getUserChats().add(this);
     }
-
     public void setChat(Chat chat) {
         this.chat = chat;
         this.chat.getUserChats().add(this);
