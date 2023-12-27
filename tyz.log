@@ -2318,3 +2318,1310 @@ AND role = ?
 2023-12-27 19:23:56.563  INFO 5364 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-12-27 19:23:56.565  INFO 5364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-12-27 19:23:56.575  INFO 5364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 22:58:51.125  INFO 3708 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 3708 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 22:58:51.139  INFO 3708 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 22:58:56.775  INFO 3708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 22:58:57.260  INFO 3708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 414 ms. Found 2 JPA repository interfaces.
+2023-12-27 22:59:00.687  INFO 3708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 22:59:01.794  INFO 3708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 22:59:02.722  INFO 3708 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 22:59:03.801  INFO 3708 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 22:59:03.834  INFO 3708 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 22:59:03.842  WARN 3708 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-12-27 22:59:03.843  INFO 3708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 22:59:03.867  INFO 3708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 22:59:03.892  INFO 3708 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 22:59:04.236 ERROR 3708 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-12-27 22:59:52.869  INFO 4248 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 4248 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 22:59:52.872  INFO 4248 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 22:59:53.444  INFO 4248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 22:59:53.543  INFO 4248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 2 JPA repository interfaces.
+2023-12-27 22:59:54.334  INFO 4248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 22:59:54.570  INFO 4248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 22:59:54.795  INFO 4248 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 22:59:54.940  INFO 4248 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 22:59:54.956  INFO 4248 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 22:59:54.967  WARN 4248 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-12-27 22:59:54.968  INFO 4248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 22:59:54.986  INFO 4248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 22:59:55.003  INFO 4248 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 22:59:55.039 ERROR 4248 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-12-27 23:02:53.568  INFO 7280 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 7280 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:02:53.572  INFO 7280 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:02:54.212  INFO 7280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:02:54.371  INFO 7280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:02:55.453  INFO 7280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:02:55.885  INFO 7280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:02:56.137  INFO 7280 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:02:56.515  INFO 7280 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:02:56.568  INFO 7280 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:02:56.579  WARN 7280 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-12-27 23:02:56.581  INFO 7280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:02:56.619  INFO 7280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:02:56.632  INFO 7280 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:02:56.684 ERROR 7280 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-12-27 23:05:21.417  INFO 7860 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 7860 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:05:21.421  INFO 7860 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:05:22.000  INFO 7860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:05:22.095  INFO 7860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:05:22.945  INFO 7860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:05:23.188  INFO 7860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:05:23.462  INFO 7860 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:05:23.608  INFO 7860 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:05:23.839  INFO 7860 --- [main] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2023-12-27 23:05:24.238  INFO 7860 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:05:24.950  INFO 7860 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:05:24.952  INFO 7860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::jenyanogach ran successfully in 661ms
+2023-12-27 23:05:25.381  INFO 7860 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:05:25.382  INFO 7860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::jenyanogach ran successfully in 170ms
+2023-12-27 23:05:25.489  INFO 7860 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:05:25.490  INFO 7860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::jenyanogach ran successfully in 102ms
+2023-12-27 23:05:25.583  INFO 7860 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:05:25.584  INFO 7860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::jenyanogach ran successfully in 89ms
+2023-12-27 23:05:25.692  INFO 7860 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:05:25.693  INFO 7860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::jenyanogach ran successfully in 103ms
+2023-12-27 23:05:25.781  INFO 7860 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:05:25.782  INFO 7860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::jenyanogach ran successfully in 83ms
+2023-12-27 23:05:25.808  INFO 7860 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:05:25.809  INFO 7860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::jenyanogach ran successfully in 23ms
+2023-12-27 23:05:25.815  INFO 7860 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:05:26.290  INFO 7860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-27 23:05:26.414  INFO 7860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-12-27 23:05:26.904  INFO 7860 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-27 23:05:27.142  INFO 7860 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-12-27 23:05:27.231  INFO 7860 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2023-12-27 23:05:29.946 ERROR 7860 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [revision]
+2023-12-27 23:05:29.947  WARN 7860 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [revision]
+2023-12-27 23:05:29.948  INFO 7860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:05:29.959  INFO 7860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:05:29.976  INFO 7860 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:05:30.003 ERROR 7860 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [revision]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [revision]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 15 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [revision]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:129)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 19 common frames omitted
+
+2023-12-27 23:14:26.468  INFO 8736 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 8736 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:14:26.472  INFO 8736 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:14:27.035  INFO 8736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:14:27.136  INFO 8736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:14:27.886  INFO 8736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:14:28.137  INFO 8736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:14:28.350  INFO 8736 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:14:28.494  INFO 8736 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:14:28.700  INFO 8736 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:14:28.801  INFO 8736 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:14:28.803  WARN 8736 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BOIGINT NOT NULL
+)]
+2023-12-27 23:14:28.804  INFO 8736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:14:28.867  INFO 8736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:14:28.879  INFO 8736 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:14:28.905 ERROR 8736 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BOIGINT NOT NULL
+)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BOIGINT NOT NULL
+)]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:124)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 17 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BOIGINT NOT NULL
+)]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:695)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:49)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:111)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:110)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:94)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:66)
+	... 35 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BOIGINT NOT NULL
+)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:82)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:150)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:660)
+	... 55 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2674)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2364)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:354)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:484)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:404)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:325)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:287)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:282)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:389)
+	... 60 common frames omitted
+
+2023-12-27 23:15:54.718  INFO 3920 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 3920 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:15:54.725  INFO 3920 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:15:55.344  INFO 3920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:15:55.463  INFO 3920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:15:56.311  INFO 3920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:15:56.573  INFO 3920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:15:56.830  INFO 3920 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:15:56.968  INFO 3920 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:15:57.238  INFO 3920 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:15:57.328  INFO 3920 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:15:57.330  WARN 3920 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+2023-12-27 23:15:57.331  INFO 3920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:15:57.363  INFO 3920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:15:57.380  INFO 3920 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:15:57.412 ERROR 3920 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:124)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 17 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:695)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:49)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:111)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:110)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:94)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:66)
+	... 35 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21 [Failed SQL: (0) CREATE TABLE IF NOT EXIST revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:82)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:150)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:660)
+	... 55 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "EXIST")
+  Позиция: 21
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2674)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2364)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:354)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:484)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:404)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:325)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:287)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:282)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:389)
+	... 60 common frames omitted
+
+2023-12-27 23:16:37.500  INFO 10244 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 10244 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:16:37.503  INFO 10244 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:16:38.217  INFO 10244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:16:38.319  INFO 10244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:16:39.163  INFO 10244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:16:39.417  INFO 10244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:16:39.623  INFO 10244 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:16:39.753  INFO 10244 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:16:39.984  INFO 10244 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:16:40.086  INFO 10244 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:16:40.088  WARN 10244 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMERY")
+  Позиция: 53 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+2023-12-27 23:16:40.089  INFO 10244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:16:40.142  INFO 10244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:16:40.156  INFO 10244 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:16:40.185 ERROR 10244 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMERY")
+  Позиция: 53 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMERY")
+  Позиция: 53 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:124)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 17 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::1::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMERY")
+  Позиция: 53 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:695)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:49)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:111)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:110)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:94)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:66)
+	... 35 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMERY")
+  Позиция: 53 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS revision
+(
+    id SERIAL PRIMERY KEY ,
+    TIMESTAMP BIGINT NOT NULL
+)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:82)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:150)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:660)
+	... 55 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMERY")
+  Позиция: 53
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2674)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2364)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:354)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:484)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:404)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:325)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:287)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:282)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:389)
+	... 60 common frames omitted
+
+2023-12-27 23:18:05.098  INFO 10900 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 10900 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:18:05.102  INFO 10900 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:18:05.761  INFO 10900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:18:05.877  INFO 10900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:18:06.728  INFO 10900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:18:06.981  INFO 10900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:18:07.210  INFO 10900 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:18:07.367  INFO 10900 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:18:07.564  INFO 10900 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:18:07.714  INFO 10900 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:18:07.717  INFO 10900 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::jenyanogach ran successfully in 94ms
+2023-12-27 23:18:07.805  INFO 10900 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:18:07.809  WARN 10900 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::2::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: тип "boigint" не существует
+  Позиция: 63 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS users_aud
+(
+    id BIGINT,
+    rev BOIGINT REFERENCES revision (id),
+    revtype SMALLINT ,
+    username VARCHAR(64) NOT NULL UNIQUE ,
+    birth_date DATE,
+    firstname VARCHAR(64),
+    lastname VARCHAR(64),
+    role VARCHAR(32),
+    company_id BIGINT
+)]
+2023-12-27 23:18:07.811  INFO 10900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:18:07.856  INFO 10900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:18:07.870  INFO 10900 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:18:07.896 ERROR 10900 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::2::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: тип "boigint" не существует
+  Позиция: 63 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS users_aud
+(
+    id BIGINT,
+    rev BOIGINT REFERENCES revision (id),
+    revtype SMALLINT ,
+    username VARCHAR(64) NOT NULL UNIQUE ,
+    birth_date DATE,
+    firstname VARCHAR(64),
+    lastname VARCHAR(64),
+    role VARCHAR(32),
+    company_id BIGINT
+)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::2::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: тип "boigint" не существует
+  Позиция: 63 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS users_aud
+(
+    id BIGINT,
+    rev BOIGINT REFERENCES revision (id),
+    revtype SMALLINT ,
+    username VARCHAR(64) NOT NULL UNIQUE ,
+    birth_date DATE,
+    firstname VARCHAR(64),
+    lastname VARCHAR(64),
+    role VARCHAR(32),
+    company_id BIGINT
+)]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:124)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 17 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/db.changelog-2.1.sql::2::jenyanogach:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: тип "boigint" не существует
+  Позиция: 63 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS users_aud
+(
+    id BIGINT,
+    rev BOIGINT REFERENCES revision (id),
+    revtype SMALLINT ,
+    username VARCHAR(64) NOT NULL UNIQUE ,
+    birth_date DATE,
+    firstname VARCHAR(64),
+    lastname VARCHAR(64),
+    role VARCHAR(32),
+    company_id BIGINT
+)]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:695)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:49)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:111)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:110)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:94)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Scope.child(Scope.java:239)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:66)
+	... 35 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: тип "boigint" не существует
+  Позиция: 63 [Failed SQL: (0) CREATE TABLE IF NOT EXISTS users_aud
+(
+    id BIGINT,
+    rev BOIGINT REFERENCES revision (id),
+    revtype SMALLINT ,
+    username VARCHAR(64) NOT NULL UNIQUE ,
+    birth_date DATE,
+    firstname VARCHAR(64),
+    lastname VARCHAR(64),
+    role VARCHAR(32),
+    company_id BIGINT
+)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:82)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:150)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:660)
+	... 55 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: тип "boigint" не существует
+  Позиция: 63
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2674)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2364)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:354)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:484)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:404)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:325)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:287)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:282)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:389)
+	... 60 common frames omitted
+
+2023-12-27 23:18:39.924  INFO 4164 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 4164 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:18:39.927  INFO 4164 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:18:40.523  INFO 4164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:18:40.629  INFO 4164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:18:41.405  INFO 4164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:18:41.651  INFO 4164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:18:41.877  INFO 4164 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:18:41.997  INFO 4164 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:18:42.258  INFO 4164 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:18:42.387  INFO 4164 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:18:42.389  INFO 4164 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::jenyanogach ran successfully in 69ms
+2023-12-27 23:18:42.430  INFO 4164 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:18:42.713  INFO 4164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-27 23:18:42.815  INFO 4164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-12-27 23:18:43.061  INFO 4164 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-27 23:18:43.225  INFO 4164 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-12-27 23:18:43.284  INFO 4164 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2023-12-27 23:18:44.969 ERROR 4164 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:18:44.971  WARN 4164 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:18:44.971  INFO 4164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:18:44.979  INFO 4164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:18:44.997  INFO 4164 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:18:45.022 ERROR 4164 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 15 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:167)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:151)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 19 common frames omitted
+
+2023-12-27 23:19:30.514  INFO 4764 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 4764 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:19:30.517  INFO 4764 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:19:31.100  INFO 4764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:19:31.209  INFO 4764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:19:32.089  INFO 4764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:19:32.374  INFO 4764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:19:32.590  INFO 4764 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:19:32.742  INFO 4764 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:19:32.989  INFO 4764 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:19:33.019  INFO 4764 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:19:33.024  WARN 4764 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ValidationFailedException: Validation Failed:
+     1 change sets check sum
+          db/changelog/db.changelog-2.1.sql::2::jenyanogach was: 8:15e882e623da46a87d5d1d6d0e482dff but is now: 8:5a8ef62ed12eefd0d93c3f52951a8ed8
+
+2023-12-27 23:19:33.024  INFO 4764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:19:33.100  INFO 4764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:19:33.112  INFO 4764 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:19:33.137 ERROR 4764 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ValidationFailedException: Validation Failed:
+     1 change sets check sum
+          db/changelog/db.changelog-2.1.sql::2::jenyanogach was: 8:15e882e623da46a87d5d1d6d0e482dff but is now: 8:5a8ef62ed12eefd0d93c3f52951a8ed8
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 change sets check sum
+          db/changelog/db.changelog-2.1.sql::2::jenyanogach was: 8:15e882e623da46a87d5d1d6d0e482dff but is now: 8:5a8ef62ed12eefd0d93c3f52951a8ed8
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:299)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:231)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 17 common frames omitted
+
+2023-12-27 23:20:59.063  INFO 9692 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 9692 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:20:59.067  INFO 9692 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:20:59.636  INFO 9692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:20:59.737  INFO 9692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:21:00.556  INFO 9692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:21:00.818  INFO 9692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:21:01.078  INFO 9692 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:21:01.301  INFO 9692 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:21:01.377  INFO 9692 --- [main] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2023-12-27 23:21:01.420  INFO 9692 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:21:01.589  INFO 9692 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:21:01.592  INFO 9692 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::jenyanogach ran successfully in 120ms
+2023-12-27 23:21:01.683  INFO 9692 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:21:01.686  INFO 9692 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::jenyanogach ran successfully in 59ms
+2023-12-27 23:21:01.785  INFO 9692 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:21:01.787  INFO 9692 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::jenyanogach ran successfully in 95ms
+2023-12-27 23:21:01.848  INFO 9692 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:21:01.850  INFO 9692 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::jenyanogach ran successfully in 57ms
+2023-12-27 23:21:01.969  INFO 9692 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:21:01.970  INFO 9692 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::jenyanogach ran successfully in 115ms
+2023-12-27 23:21:02.067  INFO 9692 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:21:02.068  INFO 9692 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::jenyanogach ran successfully in 93ms
+2023-12-27 23:21:02.080  INFO 9692 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:21:02.081  INFO 9692 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::jenyanogach ran successfully in 7ms
+2023-12-27 23:21:02.153  INFO 9692 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:21:02.154  INFO 9692 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::jenyanogach ran successfully in 69ms
+2023-12-27 23:21:02.248  INFO 9692 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:21:02.251  INFO 9692 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::jenyanogach ran successfully in 93ms
+2023-12-27 23:21:02.269  INFO 9692 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:21:02.433  INFO 9692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-27 23:21:02.523  INFO 9692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-12-27 23:21:02.741  INFO 9692 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-27 23:21:02.896  INFO 9692 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-12-27 23:21:02.966  INFO 9692 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2023-12-27 23:21:04.595 ERROR 9692 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:21:04.596  WARN 9692 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:21:04.596  INFO 9692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:21:04.604  INFO 9692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:21:04.622  INFO 9692 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:21:04.656 ERROR 9692 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 15 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:167)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:151)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 19 common frames omitted
+
+2023-12-27 23:21:54.359  INFO 3708 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 3708 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:21:54.362  INFO 3708 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:21:54.909  INFO 3708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:21:55.006  INFO 3708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:21:55.742  INFO 3708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:21:55.997  INFO 3708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:21:56.215  INFO 3708 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:21:56.343  INFO 3708 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:21:56.522  INFO 3708 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:21:56.552  INFO 3708 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:21:56.556  WARN 3708 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ValidationFailedException: Validation Failed:
+     1 change sets check sum
+          db/changelog/db.changelog-2.1.sql::2::jenyanogach was: 8:5a8ef62ed12eefd0d93c3f52951a8ed8 but is now: 8:4be0aeb5e449a3461e1e549e177c8ecb
+
+2023-12-27 23:21:56.557  INFO 3708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:21:56.632  INFO 3708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:21:56.644  INFO 3708 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:21:56.669 ERROR 3708 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ValidationFailedException: Validation Failed:
+     1 change sets check sum
+          db/changelog/db.changelog-2.1.sql::2::jenyanogach was: 8:5a8ef62ed12eefd0d93c3f52951a8ed8 but is now: 8:4be0aeb5e449a3461e1e549e177c8ecb
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 change sets check sum
+          db/changelog/db.changelog-2.1.sql::2::jenyanogach was: 8:5a8ef62ed12eefd0d93c3f52951a8ed8 but is now: 8:4be0aeb5e449a3461e1e549e177c8ecb
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:299)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:231)
+	at liquibase.Scope.lambda$child$0(Scope.java:177)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.Scope.child(Scope.java:155)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 17 common frames omitted
+
+2023-12-27 23:22:26.162  INFO 4660 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 4660 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:22:26.165  INFO 4660 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:22:26.743  INFO 4660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:22:26.846  INFO 4660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:22:27.618  INFO 4660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:22:27.869  INFO 4660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:22:28.091  INFO 4660 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:22:28.561  INFO 4660 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:22:28.644  INFO 4660 --- [main] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2023-12-27 23:22:28.731  INFO 4660 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:22:29.016  INFO 4660 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:22:29.018  INFO 4660 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::jenyanogach ran successfully in 223ms
+2023-12-27 23:22:29.106  INFO 4660 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:22:29.108  INFO 4660 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::jenyanogach ran successfully in 62ms
+2023-12-27 23:22:29.263  INFO 4660 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:22:29.265  INFO 4660 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::jenyanogach ran successfully in 151ms
+2023-12-27 23:22:29.483  INFO 4660 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:22:29.484  INFO 4660 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::jenyanogach ran successfully in 216ms
+2023-12-27 23:22:29.753  INFO 4660 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:22:29.755  INFO 4660 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::jenyanogach ran successfully in 267ms
+2023-12-27 23:22:29.991  INFO 4660 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:22:29.993  INFO 4660 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::jenyanogach ran successfully in 234ms
+2023-12-27 23:22:30.003  INFO 4660 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:22:30.004  INFO 4660 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::jenyanogach ran successfully in 7ms
+2023-12-27 23:22:30.051  INFO 4660 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:22:30.053  INFO 4660 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::jenyanogach ran successfully in 45ms
+2023-12-27 23:22:30.117  INFO 4660 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:22:30.118  INFO 4660 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::jenyanogach ran successfully in 62ms
+2023-12-27 23:22:30.126  INFO 4660 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:22:30.293  INFO 4660 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-27 23:22:30.394  INFO 4660 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-12-27 23:22:30.626  INFO 4660 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-27 23:22:30.812  INFO 4660 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-12-27 23:22:30.879  INFO 4660 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2023-12-27 23:22:32.533 ERROR 4660 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:22:32.534  WARN 4660 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:22:32.535  INFO 4660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:22:32.543  INFO 4660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:22:32.563  INFO 4660 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:22:32.588 ERROR 4660 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 15 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [id] in table [revision]; found [serial (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:167)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:151)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 19 common frames omitted
+
+2023-12-27 23:25:17.114  INFO 5920 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 5920 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:25:17.119  INFO 5920 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:25:17.895  INFO 5920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:25:17.992  INFO 5920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:25:18.783  INFO 5920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:25:19.077  INFO 5920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:25:19.293  INFO 5920 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:25:19.611  INFO 5920 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:25:19.734  INFO 5920 --- [main] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2023-12-27 23:25:19.784  INFO 5920 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:25:19.951  INFO 5920 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:25:19.953  INFO 5920 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::jenyanogach ran successfully in 103ms
+2023-12-27 23:25:20.054  INFO 5920 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:25:20.056  INFO 5920 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::jenyanogach ran successfully in 65ms
+2023-12-27 23:25:20.158  INFO 5920 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:25:20.160  INFO 5920 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::jenyanogach ran successfully in 96ms
+2023-12-27 23:25:20.394  INFO 5920 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:25:20.395  INFO 5920 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::jenyanogach ran successfully in 230ms
+2023-12-27 23:25:20.493  INFO 5920 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:25:20.494  INFO 5920 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::jenyanogach ran successfully in 95ms
+2023-12-27 23:25:20.711  INFO 5920 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:25:20.712  INFO 5920 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::jenyanogach ran successfully in 213ms
+2023-12-27 23:25:20.867  INFO 5920 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:25:20.868  INFO 5920 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::jenyanogach ran successfully in 7ms
+2023-12-27 23:25:20.993  INFO 5920 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:25:20.994  INFO 5920 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::jenyanogach ran successfully in 122ms
+2023-12-27 23:25:21.057  INFO 5920 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:25:21.059  INFO 5920 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::jenyanogach ran successfully in 62ms
+2023-12-27 23:25:21.066  INFO 5920 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:25:21.224  INFO 5920 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-27 23:25:21.317  INFO 5920 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-12-27 23:25:21.553  INFO 5920 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-27 23:25:21.713  INFO 5920 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-12-27 23:25:21.767  INFO 5920 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2023-12-27 23:25:23.459 ERROR 5920 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [rev] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:25:23.460  WARN 5920 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [rev] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:25:23.461  INFO 5920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:25:23.470  INFO 5920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:25:23.486  INFO 5920 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:25:23.519 ERROR 5920 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [rev] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [rev] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 15 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [rev] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:167)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:151)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 19 common frames omitted
+
+2023-12-27 23:26:29.331  INFO 7904 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 7904 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:26:29.336  INFO 7904 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:26:29.927  INFO 7904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:26:30.029  INFO 7904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:26:30.922  INFO 7904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:26:31.197  INFO 7904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:26:31.520  INFO 7904 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:26:31.786  INFO 7904 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:26:31.881  INFO 7904 --- [main] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2023-12-27 23:26:31.920  INFO 7904 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:26:32.132  INFO 7904 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:26:32.135  INFO 7904 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::jenyanogach ran successfully in 159ms
+2023-12-27 23:26:32.321  INFO 7904 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:26:32.323  INFO 7904 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::jenyanogach ran successfully in 134ms
+2023-12-27 23:26:32.428  INFO 7904 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:26:32.430  INFO 7904 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::jenyanogach ran successfully in 100ms
+2023-12-27 23:26:32.500  INFO 7904 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:26:32.502  INFO 7904 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::jenyanogach ran successfully in 66ms
+2023-12-27 23:26:32.599  INFO 7904 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:26:32.601  INFO 7904 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::jenyanogach ran successfully in 93ms
+2023-12-27 23:26:32.710  INFO 7904 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:26:32.712  INFO 7904 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::jenyanogach ran successfully in 105ms
+2023-12-27 23:26:32.723  INFO 7904 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:26:32.725  INFO 7904 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::jenyanogach ran successfully in 7ms
+2023-12-27 23:26:32.775  INFO 7904 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:26:32.776  INFO 7904 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::jenyanogach ran successfully in 48ms
+2023-12-27 23:26:32.832  INFO 7904 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:26:32.834  INFO 7904 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::jenyanogach ran successfully in 54ms
+2023-12-27 23:26:32.839  INFO 7904 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:26:33.012  INFO 7904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-27 23:26:33.091  INFO 7904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-12-27 23:26:33.343  INFO 7904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-27 23:26:33.516  INFO 7904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-12-27 23:26:33.573  INFO 7904 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2023-12-27 23:26:35.306 ERROR 7904 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [company_id] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:26:35.307  WARN 7904 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [company_id] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+2023-12-27 23:26:35.308  INFO 7904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:26:35.317  INFO 7904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-27 23:26:35.334  INFO 7904 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 23:26:35.361 ERROR 7904 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [company_id] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.example.Main.main(Main.java:15)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [company_id] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 15 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [company_id] in table [users_aud]; found [int4 (Types#INTEGER)], but expecting [int8 (Types#BIGINT)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:167)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:151)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 19 common frames omitted
+
+2023-12-27 23:28:07.272  INFO 8816 --- [main] org.example.Main                         : Starting Main using Java 17.0.7 on DESKTOP-DM6LD06 with PID 8816 (E:\spring\spring-project-starter\build\classes\java\main started by vidni in E:\spring\spring-project-starter)
+2023-12-27 23:28:07.275  INFO 8816 --- [main] org.example.Main                         : The following profiles are active: qa
+2023-12-27 23:28:07.840  INFO 8816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 23:28:07.936  INFO 8816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2023-12-27 23:28:08.670  INFO 8816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-27 23:28:08.916  INFO 8816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-27 23:28:09.126  INFO 8816 --- [main] liquibase.database                       : Set default schema name to public
+2023-12-27 23:28:09.376  INFO 8816 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-12-27 23:28:09.459  INFO 8816 --- [main] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2023-12-27 23:28:09.519  INFO 8816 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-27 23:28:09.690  INFO 8816 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:28:09.692  INFO 8816 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::jenyanogach ran successfully in 118ms
+2023-12-27 23:28:10.011  INFO 8816 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:28:10.024  INFO 8816 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::jenyanogach ran successfully in 191ms
+2023-12-27 23:28:10.358  INFO 8816 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:28:10.367  INFO 8816 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::jenyanogach ran successfully in 320ms
+2023-12-27 23:28:10.542  INFO 8816 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:28:10.568  INFO 8816 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::jenyanogach ran successfully in 177ms
+2023-12-27 23:28:10.778  INFO 8816 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:28:10.813  INFO 8816 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::jenyanogach ran successfully in 212ms
+2023-12-27 23:28:11.075  INFO 8816 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:28:11.126  INFO 8816 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::jenyanogach ran successfully in 281ms
+2023-12-27 23:28:11.210  INFO 8816 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:28:11.267  INFO 8816 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::jenyanogach ran successfully in 62ms
+2023-12-27 23:28:11.423  INFO 8816 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:28:11.450  INFO 8816 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::jenyanogach ran successfully in 148ms
+2023-12-27 23:28:11.826  INFO 8816 --- [main] liquibase.changelog                      : Custom SQL executed
+2023-12-27 23:28:11.845  INFO 8816 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::jenyanogach ran successfully in 354ms
+2023-12-27 23:28:11.900  INFO 8816 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-12-27 23:28:12.048  INFO 8816 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-27 23:28:12.135  INFO 8816 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2023-12-27 23:28:12.354  INFO 8816 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-27 23:28:12.522  INFO 8816 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-12-27 23:28:12.584  INFO 8816 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2023-12-27 23:28:14.233  INFO 8816 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-27 23:28:14.466  INFO 8816 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-27 23:28:14.503  INFO 8816 --- [main] o.e.s.configuration.JpaConfiguration     : jpa configuration is enable
+2023-12-27 23:28:14.520  INFO 8816 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-27 23:28:16.100  INFO 8816 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-27 23:28:16.102  INFO 8816 --- [main] o.e.spring.database.pool.ConnectionPool  : init connection pool
+2023-12-27 23:28:16.459  INFO 8816 --- [main] org.example.Main                         : Started Main in 9.956 seconds (JVM running for 11.017)
+2023-12-27 23:28:16.466  INFO 8816 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-27 23:28:16.466  INFO 8816 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-27 23:28:16.467  INFO 8816 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Property set
+2023-12-27 23:28:16.467  INFO 8816 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-27 23:28:16.469  INFO 8816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-27 23:28:16.479  INFO 8816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

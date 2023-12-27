@@ -1,9 +1,14 @@
+--liquibase formatted sql
+
+--changeset jenyanogach:1
 CREATE TABLE IF NOT EXISTS company
 (
     id BIGSERIAL PRIMARY KEY ,
     name VARCHAR(64) NOT NULL UNIQUE
     );
+--rollback DROP TABLE company
 
+--changeset jenyanogach:2
 CREATE TABLE IF NOT EXISTS company_locales
 (
     company_id BIGINT REFERENCES company (id),
@@ -12,6 +17,7 @@ CREATE TABLE IF NOT EXISTS company_locales
     PRIMARY KEY (company_id, lang)
     );
 
+--changeset jenyanogach:3
 CREATE TABLE IF NOT EXISTS users
 (
     id BIGSERIAL PRIMARY KEY ,
@@ -23,6 +29,7 @@ CREATE TABLE IF NOT EXISTS users
     company_id BIGINT REFERENCES company (id)
     );
 
+--changeset jenyanogach:4
 CREATE TABLE IF NOT EXISTS payment
 (
     id BIGSERIAL PRIMARY KEY ,
@@ -30,12 +37,14 @@ CREATE TABLE IF NOT EXISTS payment
     receiver_id BIGINT NOT NULL REFERENCES users (id)
     );
 
+--changeset jenyanogach:5
 CREATE TABLE IF NOT EXISTS chat
 (
     id BIGSERIAL PRIMARY KEY ,
     name VARCHAR(64) NOT NULL UNIQUE
     );
 
+--changeset jenyanogach:6
 CREATE TABLE IF NOT EXISTS users_chat
 (
     id BIGSERIAL PRIMARY KEY ,
