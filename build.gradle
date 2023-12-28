@@ -20,6 +20,11 @@ configurations {
 }
 
 dependencies {
+    implementation 'javax.validation:validation-api'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    /*
+    include: json, starter-tomcat, spring-web, spring-webmvc
+     */
     implementation 'org.springframework.boot:spring-boot-starter' // core, autoconfiguration, logging, YAML
     /*
     include: spring-core, spring-context, jakarta-annotation-api

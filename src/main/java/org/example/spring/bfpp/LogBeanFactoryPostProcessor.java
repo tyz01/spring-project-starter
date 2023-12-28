@@ -12,7 +12,6 @@ public class LogBeanFactoryPostProcessor implements BeanFactoryPostProcessor, Or
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
 
     }
-
     @Override
     public int getOrder() {
         return Ordered.HIGHEST_PRECEDENCE;

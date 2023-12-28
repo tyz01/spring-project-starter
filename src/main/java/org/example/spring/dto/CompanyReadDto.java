@@ -1,4 +1,15 @@
 package org.example.spring.dto;
 
-public record CompanyReadDto(Long id) {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class CompanyReadDto implements BaseDto {
+
+    String firstname;
+    String lastname;
+
 }
