@@ -13,5 +13,6 @@ public class RestControllerExceptionHandler extends ResponseEntityExceptionHandl
     @ExceptionHandler(Exception.class) // default - all exception
     private void handleExceptions(Exception exception, HttpServletRequest request) {
         log.error("failed to return response", exception);
+
     }
 }

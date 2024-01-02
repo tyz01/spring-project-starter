@@ -24,6 +24,8 @@ public class UserCreateEditDto {
     Long id;
     @Email
     String username;
+    @NotBlank(groups = CreateAction.class)
+    String rawPassword;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     LocalDate birthDate;
     @NotBlank
