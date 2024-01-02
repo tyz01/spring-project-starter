@@ -1,0 +1,305 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Generated server url"
+    }
+  ],
+  "paths": {
+    "/api/v1/update": {
+      "put": {
+        "tags": [
+          "user-rest-controller"
+        ],
+        "operationId": "update",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCreateEditDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/create": {
+      "post": {
+        "tags": [
+          "user-rest-controller"
+        ],
+        "operationId": "create",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCreateEditDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/v1": {
+      "get": {
+        "tags": [
+          "user-rest-controller"
+        ],
+        "operationId": "findAll",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponseListUser"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/{id}": {
+      "get": {
+        "tags": [
+          "user-rest-controller"
+        ],
+        "operationId": "findById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponseUser"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/delete": {
+      "delete": {
+        "tags": [
+          "user-rest-controller"
+        ],
+        "operationId": "delete",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCreateEditDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "UserCreateEditDto": {
+        "required": [
+          "firstname"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "username": {
+            "type": "string"
+          },
+          "birthDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "firstname": {
+            "maxLength": 64,
+            "minLength": 3,
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "USER",
+              "ADMIN"
+            ]
+          },
+          "companyId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "ApiResponseListUser": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/User"
+            }
+          },
+          "error": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Chat": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          },
+          "userChats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserChat"
+            }
+          }
+        }
+      },
+      "Company": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          },
+          "locales": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "type": "string"
+          },
+          "modifiedBy": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "username": {
+            "type": "string"
+          },
+          "birthDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "USER",
+              "ADMIN"
+            ]
+          },
+          "company": {
+            "$ref": "#/components/schemas/Company"
+          },
+          "userChats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserChat"
+            }
+          }
+        }
+      },
+      "UserChat": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "chat": {
+            "$ref": "#/components/schemas/Chat"
+          }
+        }
+      },
+      "ApiResponseUser": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "$ref": "#/components/schemas/User"
+          },
+          "error": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
